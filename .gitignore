@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+ENV/
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+model_cache/
+.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets
+.env
+.env.local
+.env.production
+*.key
+*.pem
+
+# Logs
+logs/*.log
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Modèles (optionnel - garder la structure)
+models/vector_store/*.npy
+models/vector_store/*.faiss
+
+# Données sensibles
+data/conversations/*.json
+data/clients/*/private/
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*.backup
+__pycache__/
+*.pyc
+.README_2.md
+models/vector_store/embeddings.npy
+models/fine_tuned/
