@@ -1,0 +1,24 @@
+# INFORMATIONS GÉNÉRALES
+La capitale de la France est Paris.
+La monnaie utilisée en France est l'euro (€).
+La population de la France est d'environ 68 millions d'habitants.
+La langue officielle est le français.
+
+# SERVICE CLIENT
+Notre service client est joignable du lundi au vendredi de 9h à 18h.
+Téléphone: 0744795968
+Email: contact@intellistacktech.com
+
+# COMMANDES
+Pour suivre votre commande, connectez-vous à votre compte.
+Le délai de livraison standard est de 3 à 5 jours ouvrés.
+La livraison express est disponible en 24h.
+
+# RETOURS
+Vous avez 30 jours pour retourner un produit.
+Les retours sont gratuits pour les membres Premium.
+Le remboursement est effectué sous 14 jours.
+
+# COMPTE UTILISATEUR
+Pour réinitialiser votre mot de passe, cliquez sur "Mot de passe oublié".
+Vous pouvez modifier vos informations dans les paramètres du compte.

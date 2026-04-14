@@ -1,0 +1,14 @@
+{
+    "salutation": ["bonjour", "salut", "hello", "coucou"],
+    "python": ["python", "langage python", "programmation python"],
+    "kubernetes": ["kubernetes", "k8s", "orchestration"],
+    "docker": ["docker", "conteneur", "dockerfile"],
+    "terraform": ["terraform", "infrastructure as code", "iac"],
+    "aws": ["aws", "amazon web services", "cloud aws", "ec2", "s3", "lambda"],
+    "devops": ["devops", "ci/cd", "pipelines", "jenkins"],
+    "ia": ["ia", "intelligence artificielle", "machine learning", "chatbot", "llm"],
+    "contact": ["contact", "email", "téléphone"],
+    "devis": ["devis", "tarif", "prix", "coût"],
+    "merci": ["merci", "thanks"],
+    "au_revoir": ["au revoir", "bye", "à bientôt"]
+}

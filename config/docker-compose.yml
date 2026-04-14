@@ -1,0 +1,56 @@
+services:
+  chatbot-api:
+    build:
+      context: ..
+      dockerfile: config/Dockerfile
+    container_name: intellistack-chatbot-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PRIMARY_MODEL=camembert-base
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - API_DEBUG=false
+      - LOG_LEVEL=INFO
+      - CONFIDENCE_THRESHOLD=0.7
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./logs:/app/logs
+    networks:
+      - intellistack-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  chatbot-frontend:
+    image: nginx:alpine
+    container_name: intellistack-chatbot-frontend
+    ports:
+      - "8082:80"
+    volumes:
+      - ../interfaces/web:/usr/share/nginx/html:ro
+    networks:
+      - intellistack-network
+
+  redis:
+    image: redis:alpine
+    container_name: intellistack-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - intellistack-network
+
+volumes:
+  redis-data:
+
+networks:
+  intellistack-network:
+    driver: bridge
